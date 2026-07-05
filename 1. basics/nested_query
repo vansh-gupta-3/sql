@@ -1,0 +1,9 @@
+-- Find students who have a higher GPA than the global college average
+SELECT 
+    first_name, 
+    last_name, 
+    gpa
+FROM 
+    students
+WHERE 
+    gpa > (SELECT AVG(gpa) FROM students);
