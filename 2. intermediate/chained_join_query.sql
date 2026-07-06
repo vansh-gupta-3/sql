@@ -1,7 +1,7 @@
 -- To select employees whose order amount is higher than average
 SELECT
     e.name AS employee_name,
-    d.location AS dept_location,
+    d.location AS dept_location, -- tables in the JOIN line can also be selected, not just FROM
     o.amount AS order_amount
 FROM
     employees e
