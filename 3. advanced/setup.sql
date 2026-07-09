@@ -22,6 +22,7 @@ CREATE TABLE orders (
     employee_id INT,
     order_date DATE,
     status VARCHAR(20)
+    FOREIGN KEY (employee_id) REFERENCES employees(employee_id)
 );
 
 CREATE TABLE order_items (
